@@ -44,7 +44,7 @@ export function renderCountry(location) {
 
     country.textContent = location.country;
     capital.textContent = location.capital;
-    population.textContent = location.population;
+    population.textContent = `${location.population} ${location.unit}`;
 
     countryContainer.append(country, capital, population);
 
